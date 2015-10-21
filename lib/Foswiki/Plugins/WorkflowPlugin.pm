@@ -864,8 +864,8 @@ sub afterSaveHandler {
     return
       if !$mustSave && defined $lastRev && $lastRev == $meta->getLatestRev();
 
-    $controlledTopic->setState( $controlledTopic->getState(),
-        $meta->getLatestRev() );
+    #$controlledTopic->setState( $controlledTopic->getState(),
+    #    $meta->getLatestRev() );
 
     try {
         $controlledTopic->{meta}
